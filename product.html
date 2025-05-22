@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/montagne.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGAMA</title>
+    <script src="product.js"></script>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo nav__logo">
+                <a href="index.html">AGAMA</a>
+              </div>
+            <ul>
+                <li class="active"><i class="fa-solid fa-house-user"></i> boutique</li>
+                <li><i class="fa-regular fa-user"></i> utilisateur</li>
+                <li><i class="fa-solid fa-heart"></i> plus aimés</li>
+            </ul>
+             
+        </div>
+        <div class="centre">
+            <div class="rechercher">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="bottes...">
+                    <button>rechercher</button>
+                </div>
+            </div>
+
+            <h2>PRODUITS</h2>
+            <div class="list">
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="images/sac-couchage-emballe-isole-fond-blanc_1264610-60420.avif" alt="sleeping bags">
+                    </div>
+                    <div class="contenu">
+                        <div class="title">sac de couchage </div>
+                        <div class="des">
+                            tellement chaud que le froid n'existe plus!! 
+                        </div>
+                        <div class="prix">12000 da</div>
+                        
+                        <button class="ajout">Ajouter au panier</button>
+                        <button class="supp" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="images/sac-dos-randonnee-orange-gris-durable-ideal-pour-aventures_191095-90935.avif" alt="bags">
+                    </div>
+                    <div class="contenu">
+                        <div class="title">sac à dos</div>
+                        <div class="des">
+                            tellement large qu'on peut y mettre une maison !!!
+                        </div>
+                        <div class="prix">5000 da</div>
+                        
+                        <button class="ajout">Ajouter au panier</button>
+                        <button class="supp" onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="images/pngtree-water-filter-realistic-png-image_15033338.png" alt="water filter">
+                    </div>
+                    <div class="contenu">
+                        <div class="title">filtre à eau</div>
+                        <div class="des">
+                            buvez où vous voulez!!!
+                        </div>
+                        <div class="prix">2250da</div>
+                        
+                        <button class="ajout">Ajouter au panier</button>
+                        <button class="supp" onclick="Remove(3)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="images/24.webp" alt="waterproof jacket">
+                    </div>
+                    <div class="contenu">
+                        <div class="title">veste et doudoune</div>
+                        <div class="des">
+                            
+                        </div>
+                        <div class="prix">12000da</div>
+                        
+                        <button class="ajout">Ajouter au panier</button>
+                        <button class="supp" onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="panier">
+            <div class="name">panier</div>
+            <div class="listCart">
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
