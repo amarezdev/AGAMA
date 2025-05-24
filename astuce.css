@@ -16,6 +16,7 @@
 }
 
 .section__container {
+    
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
@@ -124,7 +125,7 @@ body {
       rgba(255, 255, 255, 0),
       var(--primary-color)
     ),
-    url("images/first1.jpg");
+    url("images/collectivite.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -266,6 +267,7 @@ nav {
 }
 
 .a_propos__container {
+    color:#0a1e27;
   padding-top: 0;
   display: grid;
   gap: 5rem 2rem;
@@ -292,6 +294,7 @@ nav {
 }
 
 .a_propos__content p {
+    color:#0a1e27;
   margin-bottom: 1.5rem;
   color: var(--text-light);
 }
@@ -311,54 +314,6 @@ nav {
   transform: translateX(10px);
 }
 
-.footer {
-  background-color: var(--primary-color);
-}
-
-.footer__container {
-  display: grid;
-  gap: 4rem 2rem;
-}
-
-.footer__col:first-child {
-  max-width: 300px;
-}
-
-.footer__logo {
-  margin-bottom: 1rem;
-}
-
-.footer__col p {
-  color: var(--text-light);
-}
-
-.footer__col h4 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--secondary-color);
-}
-
-.footer__links {
-  list-style: none;
-  display: grid;
-  gap: 1rem;
-}
-
-.footer__links a {
-  color: var(--text-light);
-}
-
-.footer__links a:hover {
-  color: var(--secondary-color);
-}
-
-.footer__bar {
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: var(--text-light);
-  text-align: center;
-}
 
 @media (width > 768px) {
   .nav__logo {
@@ -440,7 +395,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-color: #0a1e27;
   display: none;
   flex-direction: column;
   align-items: center;

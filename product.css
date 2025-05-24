@@ -172,9 +172,9 @@ body {
 
 .item .img img {
     width: 100%;
-    height: auto;
-    max-height: 100px;
-    object-fit: contain;
+    height: 100%;
+    
+    object-fit: cover;
 }
 
 .item .contenu {
@@ -454,7 +454,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #4CAF50;
+    background: #0a1e27;
     color: white;
     border: none;
     font-size: 24px;

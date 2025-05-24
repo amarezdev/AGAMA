@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   
-  const menuBtn = document.getElementById("menu-btn");
+  var menuBtn = document.getElementById("menu-btn");
   const navLinks = document.getElementById("liens");
   const menuBtnIcon = menuBtn.querySelector("i");
 
@@ -11,7 +11,26 @@ document.addEventListener('DOMContentLoaded', function() {
       : "ri-menu-line";
   });
 
-  
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.querySelector('.nav__menu__btn');
+    const navLinks = document.querySelector('.nav__links');
+    
+    menuBtn.addEventListener('click', function() {
+      const isOpen = navLinks.classList.contains('open');
+      
+      if (isOpen) {
+        navLinks.classList.remove('open');
+        navLinks.classList.add('close');
+        // Retirer la classe close après l'animation
+        setTimeout(() => {
+          navLinks.classList.remove('close');
+        }, 300); // Correspond à la durée de l'animation
+      } else {
+        navLinks.classList.remove('close');
+        navLinks.classList.add('open');
+      }
+    });
+  });
   navLinks.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("open");
